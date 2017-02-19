@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestHookInjector", "TestHoo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hooking", "Hooking", "{B86FE752-1BD6-4032-B905-1C25AEE2F7B3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyboardInputHooking", "KeyboardInputHooking\KeyboardInputHooking.vcxproj", "{C0700191-7117-42A6-BCE7-61674EBF4F7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -43,6 +45,14 @@ Global
 		{8DA69454-CB36-4231-B531-80CAFF2B8B15}.Release|x64.Build.0 = Release|x64
 		{8DA69454-CB36-4231-B531-80CAFF2B8B15}.Release|x86.ActiveCfg = Release|Win32
 		{8DA69454-CB36-4231-B531-80CAFF2B8B15}.Release|x86.Build.0 = Release|Win32
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D}.Debug|x64.ActiveCfg = Debug|x64
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D}.Debug|x64.Build.0 = Debug|x64
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D}.Debug|x86.ActiveCfg = Debug|Win32
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D}.Debug|x86.Build.0 = Debug|Win32
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D}.Release|x64.ActiveCfg = Release|x64
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D}.Release|x64.Build.0 = Release|x64
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D}.Release|x86.ActiveCfg = Release|Win32
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +60,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{47B9B9CF-DD9D-47ED-8F78-05F9373158E0} = {B86FE752-1BD6-4032-B905-1C25AEE2F7B3}
 		{8DA69454-CB36-4231-B531-80CAFF2B8B15} = {B86FE752-1BD6-4032-B905-1C25AEE2F7B3}
+		{C0700191-7117-42A6-BCE7-61674EBF4F7D} = {B86FE752-1BD6-4032-B905-1C25AEE2F7B3}
 	EndGlobalSection
 EndGlobal

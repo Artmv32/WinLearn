@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C0700191-7117-42A6-BCE7-61674EBF4F7D}</ProjectGuid>
+    <ProjectGuid>{8990A62C-3D51-43C5-A03F-617C6C9A94A0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>KeyboardInputHooking</RootNamespace>
+    <RootNamespace>KeyboardInputHookingGlobalHooks</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,7 +128,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -145,14 +145,13 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hooking.h" />
-    <ClInclude Include="KeyboardInputHooking.h" />
+    <ClInclude Include="KeyboardInputHooking.GlobalHooks.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="KeyboardInputHooking.cpp" />
+    <ClCompile Include="KeyboardInputHooking.GlobalHooks.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -161,10 +160,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="KeyboardInputHooking.rc" />
+    <ResourceCompile Include="KeyboardInputHooking.GlobalHooks.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="KeyboardInputHooking.ico" />
+    <Image Include="KeyboardInputHooking.GlobalHooks.ico" />
     <Image Include="small.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

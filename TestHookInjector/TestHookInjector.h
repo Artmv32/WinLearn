@@ -163,7 +163,7 @@ LRESULT CALLBACK DebugProc(_In_ int nCode, _In_ WPARAM wParam, _In_ LPARAM lPara
     functions may result in the thread not returning from GetMessage or WaitMessage when there are messages in the calling
     thread's message queue
 */
-DWORD CALLBACK ForegroundIdleProc(_In_ int code, DWORD wParam, LONG lParam)
+LRESULT CALLBACK ForegroundIdleProc(_In_ int code, WPARAM wParam, LPARAM lParam)
 {
     if (code == HC_ACTION)
     {
